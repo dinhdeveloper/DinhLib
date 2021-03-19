@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customPickerStyle" format="reference" />
+    <attr name="rv_backgroundColor" format="color" />
+    <attr name="rv_backgroundPressColor" format="color" />
+    <attr name="rv_radius" format="dimension" />
+    <attr name="rv_radius_bottom_left" format="dimension" />
+    <attr name="rv_radius_bottom_right" format="dimension" />
+    <attr name="rv_radius_top_left" format="dimension" />
+    <attr name="rv_radius_top_right" format="dimension" />
+    <attr name="rv_radius_half_height" format="boolean" />
+    <attr name="rv_isRippleEnable" format="boolean" />
+    <attr name="rv_isWidthHeightEqual" format="boolean" />
+    <attr name="rv_strokeColor" format="color" />
+    <attr name="rv_strokePressColor" format="color" />
+    <attr name="rv_strokeWidth" format="dimension" />
+    <attr name="rv_textPressColor" format="color" />
+    <attr name="rv_underlineThickness" format="dimension" />
+
+    <declare-styleable name="BirthdayInput">
+        <attr name="ldp_text_color" format="color" />
+        <attr name="ldp_hint_color" format="color" />
+        <attr name="ldp_date_format">
+            <flag name="mm-dd-yyyy" value="1" />
+            <flag name="dd-mm-yyyy" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CalendarView">
+        <attr name="titleColor" format="color" />
+        <attr name="titleLayout" format="reference" />
+        <attr name="weekColor" format="color" />
+        <attr name="weekBackground" format="color|reference" />
+        <attr name="monthBackground" format="color|reference" />
+        <attr name="dateDividerColor" format="color" />
+        <attr name="dateDividerSize" format="dimension" />
+        <attr name="imgLastMonth" format="reference" />
+        <attr name="imgNextMonth" format="reference" />
+        <attr name="monthValue" format="string" />
+        <attr name="language">
+            <enum name="china" value="1" />
+            <enum name="english" value="2" />
+            <enum name="vi" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="selector" format="boolean" />
+        <attr name="selector_color" format="color" />
+        <attr name="selector_stroke_color" format="color" />
+        <attr name="selector_stroke_width" format="dimension" />
+        <attr name="shadow" format="boolean" />
+        <attr name="civ_shadowRadius" format="float" />
+        <attr name="civ_shadowDx" format="float" />
+        <attr name="civ_shadowDy" format="float" />
+        <attr name="civ_shadowColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CurrencyEditText">
+        <attr name="TextAlignment" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomButton">
+        <attr name="cb_backgroundColor" format="color" />
+        <attr name="cb_radius" format="integer" />
+        <attr name="cb_strokeColor" format="color" />
+        <attr name="cb_strokeWidth" format="integer" />
+        <attr name="cb_strokeDashWidth" format="integer" />
+        <attr name="cb_strokeDashGap" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CustomProgressBar">
+        <attr name="foreground_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CustomTabButton">
+        <attr name="full_width" format="boolean" />
+        <attr name="tab_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DateRangeMonthView">
+        <attr name="title_color" format="color" />
+        <attr name="week_color" format="color" />
+        <attr name="range_color" format="color" />
+        <attr name="selected_date_circle_color" format="color" />
+        <attr name="selected_date_color" format="color" />
+        <attr name="default_date_color" format="color" />
+        <attr name="range_date_color" format="color" />
+        <attr name="disable_date_color" format="color" />
+        <attr name="text_size_title" format="dimension" />
+        <attr name="text_size_week" format="dimension" />
+        <attr name="text_size_date" format="dimension" />
+        <attr name="header_bg" format="integer" />
+        <attr name="calendar_tag" format="string" />
+        <attr name="week_offset" format="integer" />
+        <attr name="editable" format="boolean" />
+        <attr name="swipeable" format="boolean" />
+        <attr name="show_header" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="GraphViewXML">
+        <attr name="seriesData" format="string" />
+        <attr name="seriesType" format="string" />
+        <attr name="seriesTitle" format="string" />
+        <attr name="android:title" />
+        <attr name="seriesColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ImageCropView">
+        <attr name="gridInnerStroke" format="dimension" />
+        <attr name="gridInnerColor" format="color" />
+        <attr name="setInnerGridMode" format="integer">
+            <enum name="off" value="0" />
+            <enum name="on" value="1" />
+        </attr>
+        <attr name="gridOuterStroke" format="dimension" />
+        <attr name="gridOuterColor" format="color" />
+        <attr name="setOuterGridMode" format="integer">
+            <enum name="off" value="0" />
+            <enum name="on" value="1" />
+        </attr>
+        <attr name="gridLeftRightMargin" format="dimension" />
+        <attr name="gridTopBottomMargin" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MKLoader">
+        <attr name="mk_color" format="color" />
+        <attr name="mk_type">
+            <enum name="ClassicSpinner" value="0" />
+            <enum name="FishSpinner" value="1" />
+            <enum name="LineSpinner" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MyCustomPicker">
+        <attr name="cp_width" format="dimension" />
+        <attr name="cp_height" format="dimension" />
+        <attr name="cp_accessibilityDescriptionEnabled" format="boolean" />
+        <attr name="cp_divider" format="reference" />
+        <attr name="cp_dividerColor" format="color" />
+        <attr name="cp_dividerDistance" format="dimension" />
+        <attr name="cp_dividerThickness" format="dimension" />
+        <attr name="cp_fadingEdgeEnabled" format="boolean" />
+        <attr name="cp_fadingEdgeStrength" format="float" />
+        <attr name="cp_formatter" format="string" />
+        <attr name="cp_hideWheelUntilFocused" format="boolean" />
+        <attr name="cp_lineSpacingMultiplier" format="float" />
+        <attr name="cp_max" format="integer" />
+        <attr name="cp_maxFlingVelocityCoefficient" format="integer" />
+        <attr name="cp_min" format="integer" />
+        <attr name="cp_order" format="enum">
+            <enum name="ascending" value="0" />
+            <enum name="descending" value="1" />
+        </attr>
+        <attr name="cp_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="cp_scrollerEnabled" format="boolean" />
+        <attr name="cp_selectedTextAlign" format="enum">
+            <enum name="selectedTextAlignRight" value="0" />
+            <enum name="selectedTextAlignCenter" value="1" />
+            <enum name="selectedTextAlignLeft" value="2" />
+        </attr>
+        <attr name="cp_selectedTextColor" format="color" />
+        <attr name="cp_selectedTextSize" format="dimension" />
+        <attr name="cp_selectedTextStrikeThru" format="boolean" />
+        <attr name="cp_selectedTextUnderline" format="boolean" />
+        <attr name="cp_selectedTypeface" format="string" />
+        <attr name="cp_textAlign" format="enum">
+            <enum name="textAlignRight" value="0" />
+            <enum name="textAlignCenter" value="1" />
+            <enum name="textAlignLeft" value="2" />
+        </attr>
+        <attr name="cp_textColor" format="color" />
+        <attr name="cp_textSize" format="dimension" />
+        <attr name="cp_textStrikeThru" format="boolean" />
+        <attr name="cp_textUnderline" format="boolean" />
+        <attr name="cp_typeface" format="string" />
+        <attr name="cp_value" format="integer" />
+        <attr name="cp_wheelItemCount" format="integer" />
+        <attr name="cp_wrapSelectorWheel" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PtrFrameLayout">
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+        <attr name="ptr_resistance" format="float" />
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <declare-styleable name="RoundFrameLayout">
+        <attr name="rv_backgroundColor" />
+        <attr name="rv_backgroundPressColor" />
+        <attr name="rv_radius" />
+        <attr name="rv_strokeWidth" />
+        <attr name="rv_strokeColor" />
+        <attr name="rv_strokePressColor" />
+        <attr name="rv_radius_half_height" />
+        <attr name="rv_isWidthHeightEqual" />
+        <attr name="rv_radius_top_left" />
+        <attr name="rv_radius_top_right" />
+        <attr name="rv_radius_bottom_left" />
+        <attr name="rv_radius_bottom_right" />
+        <attr name="rv_isRippleEnable" />
+    </declare-styleable>
+    <declare-styleable name="RoundLinearLayout">
+        <attr name="rv_backgroundColor" />
+        <attr name="rv_backgroundPressColor" />
+        <attr name="rv_radius" />
+        <attr name="rv_strokeWidth" />
+        <attr name="rv_strokeColor" />
+        <attr name="rv_strokePressColor" />
+        <attr name="rv_radius_half_height" />
+        <attr name="rv_isWidthHeightEqual" />
+        <attr name="rv_radius_top_left" />
+        <attr name="rv_radius_top_right" />
+        <attr name="rv_radius_bottom_left" />
+        <attr name="rv_radius_bottom_right" />
+        <attr name="rv_isRippleEnable" />
+    </declare-styleable>
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="rv_backgroundColor" />
+        <attr name="rv_backgroundPressColor" />
+        <attr name="rv_radius" />
+        <attr name="rv_strokeWidth" />
+        <attr name="rv_strokeColor" />
+        <attr name="rv_strokePressColor" />
+        <attr name="rv_radius_half_height" />
+        <attr name="rv_isWidthHeightEqual" />
+        <attr name="rv_radius_top_left" />
+        <attr name="rv_radius_top_right" />
+        <attr name="rv_radius_bottom_left" />
+        <attr name="rv_radius_bottom_right" />
+        <attr name="rv_isRippleEnable" />
+    </declare-styleable>
+    <declare-styleable name="RoundTextView">
+        <attr name="rv_backgroundColor" />
+        <attr name="rv_backgroundPressColor" />
+        <attr name="rv_radius" />
+        <attr name="rv_strokeWidth" />
+        <attr name="rv_strokeColor" />
+        <attr name="rv_strokePressColor" />
+        <attr name="rv_textPressColor" />
+        <attr name="rv_radius_half_height" />
+        <attr name="rv_isWidthHeightEqual" />
+        <attr name="rv_radius_top_left" />
+        <attr name="rv_radius_top_right" />
+        <attr name="rv_radius_bottom_left" />
+        <attr name="rv_radius_bottom_right" />
+        <attr name="rv_isRippleEnable" />
+        <attr name="rv_underlineThickness" />
+    </declare-styleable>
+    <declare-styleable name="SlideMenuLayout">
+        <attr name="slideMode" format="enum">
+            <enum name="left" value="1001" />
+            <enum name="right" value="1002" />
+            <enum name="both" value="1003" />
+            <enum name="none" value="1004" />
+        </attr>
+        <attr name="slidePadding" format="dimension" />
+        <attr name="slideTime" format="integer" />
+        <attr name="parallax" format="boolean" />
+        <attr name="contentAlpha" format="float" />
+        <attr name="contentShadowColor" format="color" />
+        <attr name="contentToggle" format="boolean" />
+        <attr name="allowDragging" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemScale" format="float" />
+        <attr name="itemSelectedTint" format="color" />
+        <attr name="itemTint" format="color" />
+        <attr name="delimiterSize" format="dimension" />
+        <attr name="itemIcon" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TicketView">
+        <attr name="ticketOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ticketBackgroundColor" format="color" />
+        <attr name="ticketScallopRadius" format="dimension" />
+        <attr name="ticketScallopPositionPercent" format="float" />
+        <attr name="ticketShowBorder" format="boolean" />
+        <attr name="ticketBorderWidth" format="dimension" />
+        <attr name="ticketBorderColor" format="color" />
+        <attr name="ticketShowDivider" format="boolean" />
+        <attr name="ticketDividerWidth" format="dimension" />
+        <attr name="ticketDividerPadding" format="dimension" />
+        <attr name="ticketDividerColor" format="color" />
+        <attr name="ticketDividerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="ticketDividerDashGap" format="dimension" />
+        <attr name="ticketDividerDashLength" format="dimension" />
+        <attr name="ticketCornerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="rounded" value="1" />
+            <enum name="scallop" value="2" />
+        </attr>
+        <attr name="ticketCornerRadius" format="dimension" />
+        <attr name="android:elevation" />
+        <attr name="ticketElevation" format="dimension" />
+        <attr name="ticketBackgroundBeforeDivider" format="reference" />
+        <attr name="ticketBackgroundAfterDivider" format="reference" />
+        <attr name="ticketShadowColor" format="color" />
+    </declare-styleable>
+    <!--LoadingButton-->
+    <declare-styleable name="ButtonLoading">
+
+        <attr name="BL_enable" format="boolean" />
+        <attr name="BL_idParent" format="integer" />
+        <attr name="BL_font" format="string" />
+        <attr name="BL_text" format="string" />
+        <attr name="BL_textColor" format="color" />
+        <attr name="BL_textDisableColor" format="color" />
+        <attr name="BL_backgroundColor" format="color" />
+        <attr name="BL_circleColor" format="color" />
+        <attr name="BL_circleColorSecond" format="color" />
+        <attr name="BL_backgroundDisableColor" format="color" />
+        <attr name="BL_textSize" format="dimension" />
+        <attr name="BL_stateShow" format="integer">
+            <enum name="normal" value="1" />
+            <enum name="animationStart" value="2" />
+            <enum name="progress" value="3" />
+            <enum name="animationFinish" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="TransitionImageView">
+        <!-- Amount of rounding to apply. Assign `0f`
+             to have to no rounding at all.
+             Use `1f` to have perfectly rounded edges.
+             Values in-between will be interpolated. -->
+        <attr name="tiv_rounding" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level" value="1" />
+        </attr>
+        <attr name="flingVelocity" format="integer" />
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Pinview">
+        <attr name="pinBackground" format="reference"/>
+        <attr name="pinLength" format="integer"/>
+        <attr name="pinWidth" format="dimension"/>
+        <attr name="pinHeight" format="dimension"/>
+        <attr name="splitWidth" format="dimension"/>
+        <attr name="cursorVisible" format="boolean"/>
+        <attr name="password" format="boolean"/>
+        <attr name="forceKeyboard" format ="boolean"/>
+        <attr name="hint" format="string"/>
+        <attr name="inputType"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+    <attr name="inputType" format="enum">
+        <enum name="text" value="0"/>
+        <enum name="number" value="1"/>
+    </attr>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension"/>
+        <attr name="sb_shadow_offset" format="reference|dimension"/>
+        <attr name="sb_shadow_color" format="reference|color"/>
+        <attr name="sb_uncheck_color" format="reference|color"/>
+        <attr name="sb_checked_color" format="reference|color"/>
+
+        <attr name="sb_border_width" format="reference|dimension"/>
+        <attr name="sb_checkline_color" format="reference|color"/>
+        <attr name="sb_checkline_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_color" format="reference|color"/>
+        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
+
+        <attr name="sb_checked" format="reference|boolean"/>
+        <attr name="sb_shadow_effect" format="reference|boolean"/>
+        <attr name="sb_effect_duration" format="reference|integer"/>
+        <attr name="sb_button_color" format="reference|color"/>
+        <attr name="sb_show_indicator" format="reference|boolean"/>
+        <attr name="sb_background" format="reference|color"/>
+        <attr name="sb_enable_effect" format="reference|boolean"/>
+
+        <attr name="sb_checkedbutton_color" format="reference|color"/>
+        <attr name="sb_uncheckbutton_color" format="reference|color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="FormattedEditText">
+        <attr name="fet_mode" format="enum">
+            <enum name="mode_simple" value="0" />
+            <enum name="mode_complex" value="1" />
+            <enum name="mode_mask" value="2" />
+            <enum name="mode_hint" value="3" />
+        </attr>
+        <attr name="fet_formatStyle" format="string" />
+        <attr name="fet_placeholder" format="string" />
+        <attr name="fet_emptyPlaceholder" format="string" />
+        <attr name="fet_hintTextColor" format="color" />
+        <attr name="fet_hintText" format="string" />
+        <attr name="fet_mark" format="string" />
+        <attr name="fet_showHintWhileEmpty" format="boolean" />
+        <attr name="fet_clearDrawable" format="reference" />
+        <attr name="fet_drawablePadding" format="dimension" />
+        <attr name="fet_drawableGravity" format="enum">
+            <enum name="fet_top" value="0" />
+            <enum name="fet_center" value="1" />
+            <enum name="fet_bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioView">
+        <attr name="view_aspectRatio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="Cookie">
+        <attr name="cookieTitleColor" format="color"/>
+        <attr name="cookieMessageColor" format="color"/>
+        <attr name="cookieActionColor" format="color"/>
+        <attr name="cookieBackgroundColor" format="color"/>
+
+        <attr name="cookieTitleSize" format="dimension"/>
+        <attr name="cookieMessageSize" format="dimension"/>
+        <attr name="cookieActionSize" format="dimension"/>
+        <attr name="cookiePadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CountDownView">
+        <attr name="startDuration" format="integer"/>
+        <attr name="android:textSize"/>
+        <attr name="android:textAppearance"/>
+    </declare-styleable>
+
+    <declare-styleable name="AmbilWarnaPreference">
+        <attr name="supportsAlpha"
+            format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CardSlider">
+        <!-- Active card offset from start of RecyclerView. Default value is 50dp. -->
+        <attr name="activeCardLeftOffset" format="dimension"/>
+        <!-- Card width. Default value is 148dp. -->
+        <attr name="cardWidth" format="dimension"/>
+        <!-- Distance between cards. Default value is 12dp. -->
+        <attr name="cardsGap" format="dimension"/>
+        <!-- ViewUpdater implementation class. If not set, DefaultViewUpdater class is used. -->
+        <attr name="viewUpdater" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <attr name="label_distance" format="dimension" />
+        <attr name="label_height" format="dimension"/>
+        <attr name="label_strokeWidth" format="dimension"/>
+        <attr name="label_backgroundColor" format="color"/>
+        <attr name="label_strokeColor" format="color"/>
+        <attr name="label_text" format="string"/>
+        <attr name="label_textSize" format="dimension" />
+        <attr name="label_textStyle" format="enum" >
+            <enum name="NORMAL" value="0"/>
+            <enum name="BOLD" value="1"/>
+            <enum name="ITALIC" value="2"/>
+            <enum name="BOLD_ITALIC" value="3"/>
+        </attr>
+        <attr name="label_textColor" format="color"/>
+        <attr name="label_visual" format="boolean"/>
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1"/>
+            <enum name="RIGHT_TOP" value="2"/>
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicatorView">
+        <attr name="piv_orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="piv_viewPager" format="reference" />
+        <attr name="piv_select" format="integer" />
+
+        <attr name="piv_count" format="integer" />
+        <attr name="piv_dynamicCount" format="boolean" />
+
+        <attr name="piv_radius" format="dimension" />
+        <attr name="piv_padding" format="dimension" />
+        <attr name="piv_strokeWidth" format="dimension" />
+        <attr name="piv_scaleFactor" format="float" />
+        <attr name="piv_autoVisibility" format="boolean" />
+
+        <attr name="piv_unselectedColor" format="color" />
+        <attr name="piv_selectedColor" format="color" />
+
+        <attr name="piv_interactiveAnimation" format="boolean" />
+        <attr name="piv_animationDuration" format="integer" />
+        <attr name="piv_animationType">
+            <enum name="none" value="0" />
+            <enum name="color" value="1" />
+            <enum name="scale" value="2" />
+            <enum name="worm" value="3" />
+            <enum name="slide" value="4" />
+            <enum name="fill" value="5" />
+            <enum name="thinWorm" value="6" />
+            <enum name="drop" value="7" />
+            <enum name="swap" value="8" />
+            <enum name="scale_down" value="9" />
+        </attr>
+        <attr name="piv_rtl_mode">
+            <enum name="on" value="0" />
+            <enum name="off" value="1" />
+            <enum name="auto" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SliderView">
+
+        <attr name="sliderIndicatorOrientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="sliderIndicatorEnabled" format="boolean" />
+        <attr name="sliderIndicatorRadius" format="dimension" />
+        <attr name="sliderIndicatorPadding" format="dimension" />
+        <attr name="sliderIndicatorMargin" format="dimension" />
+        <attr name="sliderIndicatorMarginLeft" format="dimension" />
+        <attr name="sliderIndicatorMarginRight" format="dimension" />
+        <attr name="sliderIndicatorMarginTop" format="dimension" />
+        <attr name="sliderIndicatorMarginBottom" format="dimension" />
+
+        <attr name="sliderIndicatorGravity">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+
+        <attr name="sliderIndicatorUnselectedColor" format="color" />
+        <attr name="sliderIndicatorSelectedColor" format="color" />
+        <attr name="sliderIndicatorAnimationDuration" format="integer" />
+        <attr name="sliderAnimationDuration" format="integer" />
+
+        <attr name="sliderIndicatorRtlMode">
+            <enum name="on" value="0" />
+            <enum name="off" value="1" />
+            <enum name="auto" value="2" />
+        </attr>
+
+        <attr name="sliderScrollTimeInSec" format="integer" />
+        <attr name="sliderAutoCycleEnabled" format="boolean" />
+        <attr name="sliderStartAutoCycle" format="boolean" />
+
+        <attr name="sliderAutoCycleDirection">
+            <enum name="right" value="0" />
+            <enum name="left" value="1" />
+            <enum name="back_and_forth" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <attr name="alertDialogDark" format="reference"/>
+    <attr name="alertDialogTextColor" format="color|reference"/>
+    <attr name="alertDialogContentTextColor" format="color|reference"/>
+
+
+    <declare-styleable name="PasscodeView">
+        <attr name="passcodeViewType" format="enum">
+            <enum name="set_passcode" value="0"/>
+            <enum name="check_passcode" value="1"/>
+        </attr>
+        <attr name="normalStateColor" format="color"/>
+        <attr name="correctStateColor" format="color"/>
+        <attr name="wrongStateColor" format="color"/>
+        <attr name="numberTextColor" format="color"/>
+        <attr name="passcodeLength" format="integer"/>
+        <attr name="firstInputTip" format="string"/>
+        <attr name="secondInputTip" format="string"/>
+        <attr name="wrongLengthTip" format="string"/>
+        <attr name="wrongInputTip" format="string"/>
+        <attr name="correctInputTip" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="progressBorderWidth" format="dimension" />
+        <attr name="showArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="JumpBall">
+        <attr name="ballRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="GravView">
+        <attr name="colorGenerator" format="string" />
+        <attr name="pointGenerator" format="string" />
+        <attr name="gravGenerator" format="string" />
+        <attr name="animationGenerator" format="string" />
+        <attr name="animationGenerators" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SingleColorGenerator">
+        <attr name="single_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ArrayColorGenerator">
+        <attr name="array_colors" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BallGenerator">
+        <attr name="ball_size" format="dimension" />
+        <attr name="ball_from_size" format="dimension" />
+        <attr name="ball_to_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RectangleGenerator">
+        <attr name="rectangle_width" format="dimension" />
+        <attr name="rectangle_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RegularPointGenerator">
+        <attr name="regular_cell_size" format="integer" />
+        <attr name="regular_variance" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularPointGenerator">
+        <attr name="circular_cell_size" format="integer" />
+        <attr name="circular_variance" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ShakeAnimator">
+        <attr name="shake_min_duration" format="integer" />
+        <attr name="shake_max_duration" format="integer" />
+        <attr name="shake_variance" format="dimension" />
+        <attr name="shake_direction" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SideToSideAnimator">
+        <attr name="side_to_side_interpolator" format="string" />
+        <attr name="side_to_side_min_duration" format="integer" />
+        <attr name="side_to_side_max_duration" format="integer" />
+        <attr name="side_to_side_direction" format="enum">
+            <enum name="leftToRight" value="0"/>
+            <enum name="rightToLeft" value="1"/>
+            <enum name="upToDown" value="2"/>
+            <enum name="downToUp" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BallSizeAnimator">
+        <attr name="ball_size_min_duration" format="integer" />
+        <attr name="ball_size_max_duration" format="integer" />
+        <attr name="ball_size_from_size" format="dimension" />
+        <attr name="ball_size_to_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PercentPointGenerator">
+        <attr name="percent_points_array" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AlphaAnimator">
+        <attr name="alpha_from" format="integer" />
+        <attr name="alpha_to" format="integer" />
+        <attr name="alpha_min_duration" format="integer" />
+        <attr name="alpha_max_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PathAnimator">
+        <attr name="path_variance_from" format="dimension" />
+        <attr name="path_variance_to" format="dimension" />
+        <attr name="path" format="string" />
+        <attr name="path_original_width" format="integer" />
+        <attr name="path_original_height" format="integer" />
+        <attr name="path_min_duration" format="integer" />
+        <attr name="path_max_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NeumorphicFrameLayout">
+        <attr name="shape">
+            <enum name="rectangle" value="0" />
+            <enum name="circle" value="1" />
+        </attr>
+        <attr name="state">
+            <enum name="flat" value="0" />
+            <enum name="concave" value="1" />
+            <enum name="convex" value="2" />
+            <enum name="pressed" value="3" />
+        </attr>
+        <attr name="background_color" format="color" />
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeOfView">
+        <attr name="shape_clip_drawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CircleView">
+        <attr name="shape_circle_borderWidth" format="dimension" />
+        <attr name="shape_circle_borderColor" format="color" />
+        <attr name="shape_circle_shadow_type" format="enum">
+            <enum name="drop_shadow" value="1" />
+            <enum name="big_inner_shadow" value="2" />
+            <enum name="small_inner_shadow" value="3" />
+        </attr>
+        <attr name="shape_circle_shadow_position_x" format="dimension" />
+        <attr name="shape_circle_shadow_position_y" format="dimension" />
+        <attr name="shape_circle_radius" format="dimension" />
+        <attr name="shape_circle_light_color" format="color" />
+        <attr name="shape_circle_dark_color" format="color" />
+        <attr name="shape_circle_backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="neoText">
+        <attr name="neo_text" format="string" />
+        <attr name="neo_borderWidth" format="dimension" />
+        <attr name="neo_borderColor" format="string" />
+        <attr name="neo_shadow_type" format="enum">
+            <enum name="drop_shadow" value="1" />
+            <enum name="big_inner_shadow" value="2" />
+            <enum name="small_inner_shadow" value="3" />
+        </attr>
+        <attr name="neo_shadow_position_x" format="dimension" />
+        <attr name="neo_shadow_position_y" format="dimension" />
+        <attr name="neo_radius" format="dimension" />
+        <attr name="neo_light_color" format="color" />
+        <attr name="neo_dark_color" format="color" />
+        <attr name="neo_backgroundColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PolygonView">
+        <attr name="shape_polygon_borderWidth" format="dimension" />
+        <attr name="shape_polygon_borderColor" format="color" />
+        <attr name="shape_polygon_shadow_type" format="enum">
+            <enum name="drop_shadow" value="1" />
+            <enum name="big_inner_shadow" value="2" />
+            <enum name="small_inner_shadow" value="3" />
+        </attr>
+        <attr name="shape_polygon_shadow_position_x" format="dimension" />
+        <attr name="shape_polygon_shadow_position_y" format="dimension" />
+        <attr name="shape_polygon_radius" format="dimension" />
+        <attr name="shape_polygon_light_color" format="color" />
+        <attr name="shape_polygon_dark_color" format="color" />
+        <attr name="shape_polygon_backgroundColor" format="color" />
+        <attr name="shape_polygon_side" format="integer" />
+        <attr name="shape_polygon_corner_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundRectView">
+        <attr name="shape_roundRect_topLeftRadius" format="dimension"/>
+        <attr name="shape_roundRect_topRightRadius" format="dimension"/>
+        <attr name="shape_roundRect_bottomLeftRadius" format="dimension"/>
+        <attr name="shape_roundRect_bottomRightRadius" format="dimension"/>
+        <attr name="shape_roundRect_borderWidth" format="dimension"/>
+        <attr name="shape_roundRect_borderColor" format="color"/>
+        <attr name="shape_roundRect_shadow_type" format="enum">
+            <enum name="drop_shadow" value="1"/>
+            <enum name="big_inner_shadow" value="2"/>
+            <enum name="small_inner_shadow" value="3"/>
+        </attr>
+        <attr name="shape_roundRect_shadow_position_x" format="dimension"/>
+        <attr name="shape_roundRect_shadow_position_y" format="dimension"/>
+        <attr name="shape_roundRect_radius" format="dimension"/>
+        <attr name="shape_roundRect_light_color" format="color"/>
+        <attr name="shape_roundRect_dark_color" format="color"/>
+        <attr name="shape_roundRect_backgroundColor" format="color"/>
+
+    </declare-styleable>
+    <declare-styleable name="CircleMenuView">
+        <!-- Array of buttons icons. -->
+        <attr name="button_icons" format="reference"/>
+        <!-- Array of buttons colors. -->
+        <attr name="button_colors" format="reference"/>
+        <!-- Menu default icon. -->
+        <attr name="icon_menu" format="reference"/>
+        <!-- Menu closed icon. -->
+        <attr name="icon_close" format="reference"/>
+        <!-- Menu icon color. -->
+        <attr name="icon_color" format="color"/>
+        <!-- Ring effect duration. -->
+        <attr name="duration_ring" format="integer"/>
+        <!-- On long click ring effect duration. -->
+        <attr name="long_click_duration_ring" format="integer"/>
+        <!-- Menu opening animation duration. -->
+        <attr name="duration_open" format="integer"/>
+        <!-- Menu closing animation duration. -->
+        <attr name="duration_close" format="integer"/>
+        <!-- Distance between center button and buttons. -->
+        <attr name="distance" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedCircleLoadingView">
+        <attr name="animCircleLoadingView_mainColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_secondaryColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_checkMarkTintColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_failureMarkTintColor" format="color" localization="suggested" />
+        <attr name="animCircleLoadingView_textColor" format="color" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="WaterView">
+        <attr name="waveWaterLevel_1" format="float" />
+        <attr name="amplitudeRatio_1" format="float" />
+        <attr name="waveLengthRatio_1" format="float" />
+        <attr name="waveShiftRatio_1" format="float" />
+        <attr name="frontWaveColor_1" format="color" />
+        <attr name="behindWaveColor_1" format="color" />
+        <attr name="waveShape_1" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="showWave_1" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BoomMenuButton">
+        <!--Basic-->
+        <attr name="bmb_cacheOptimization" format="boolean|reference"/>
+        <attr name="bmb_boomInWholeScreen" format="boolean|reference"/>
+        <attr name="bmb_inList" format="boolean|reference"/>
+        <attr name="bmb_inFragment" format="boolean|reference"/>
+        <attr name="bmb_backPressListened" format="boolean|reference"/>
+        <attr name="bmb_orientationAdaptable" format="boolean|reference"/>
+
+        <!--Shadow-->
+        <attr name="bmb_shadowEffect" format="boolean|reference"/>
+        <attr name="bmb_shadowRadius" format="dimension|reference"/>
+        <attr name="bmb_shadowColor" format="color|reference"/>
+        <attr name="bmb_shadowOffsetX" format="dimension|reference"/>
+        <attr name="bmb_shadowOffsetY" format="dimension|reference"/>
+
+        <!--Button-->
+        <attr name="bmb_buttonRadius" format="dimension|reference"/>
+        <attr name="bmb_buttonEnum" format="enum|reference">
+            <enum name="simpleCircle" value="0"/>
+            <enum name="textInsideCircle" value="1"/>
+            <enum name="textOutsideCircle" value="2"/>
+            <enum name="ham" value="3"/>
+        </attr>
+        <attr name="bmb_backgroundEffect" format="boolean|reference"/>
+        <attr name="bmb_rippleEffect" format="boolean|reference"/>
+        <attr name="bmb_normalColor" format="color|reference"/>
+        <attr name="bmb_highlightedColor" format="color|reference"/>
+        <attr name="bmb_unableColor" format="color|reference"/>
+        <attr name="bmb_draggable" format="boolean|reference"/>
+        <attr name="bmb_edgeInsetsLeft" format="dimension|reference"/>
+        <attr name="bmb_edgeInsetsTop" format="dimension|reference"/>
+        <attr name="bmb_edgeInsetsRight" format="dimension|reference"/>
+        <attr name="bmb_edgeInsetsBottom" format="dimension|reference"/>
+
+        <!--Piece-->
+        <attr name="bmb_dotRadius" format="dimension|reference"/>
+        <attr name="bmb_hamWidth" format="dimension|reference"/>
+        <attr name="bmb_hamHeight" format="dimension|reference"/>
+        <attr name="bmb_pieceCornerRadius" format="dimension|reference"/>
+        <attr name="bmb_pieceHorizontalMargin" format="dimension|reference"/>
+        <attr name="bmb_pieceVerticalMargin" format="dimension|reference"/>
+        <attr name="bmb_pieceInclinedMargin" format="dimension|reference"/>
+        <attr name="bmb_piecePlaceEnum" format="enum|reference">
+            <enum name="piecePlace_dot_1" value="0"/>
+            <enum name="piecePlace_dot_2_1" value="1"/>
+            <enum name="piecePlace_dot_2_2" value="2"/>
+            <enum name="piecePlace_dot_3_1" value="3"/>
+            <enum name="piecePlace_dot_3_2" value="4"/>
+            <enum name="piecePlace_dot_3_3" value="5"/>
+            <enum name="piecePlace_dot_3_4" value="6"/>
+            <enum name="piecePlace_dot_4_1" value="7"/>
+            <enum name="piecePlace_dot_4_2" value="8"/>
+            <enum name="piecePlace_dot_5_1" value="9"/>
+            <enum name="piecePlace_dot_5_2" value="10"/>
+            <enum name="piecePlace_dot_5_3" value="11"/>
+            <enum name="piecePlace_dot_5_4" value="12"/>
+            <enum name="piecePlace_dot_6_1" value="13"/>
+            <enum name="piecePlace_dot_6_2" value="14"/>
+            <enum name="piecePlace_dot_6_3" value="15"/>
+            <enum name="piecePlace_dot_6_4" value="16"/>
+            <enum name="piecePlace_dot_6_5" value="17"/>
+            <enum name="piecePlace_dot_6_6" value="18"/>
+            <enum name="piecePlace_dot_7_1" value="19"/>
+            <enum name="piecePlace_dot_7_2" value="20"/>
+            <enum name="piecePlace_dot_7_3" value="21"/>
+            <enum name="piecePlace_dot_7_4" value="22"/>
+            <enum name="piecePlace_dot_7_5" value="23"/>
+            <enum name="piecePlace_dot_7_6" value="24"/>
+            <enum name="piecePlace_dot_8_1" value="25"/>
+            <enum name="piecePlace_dot_8_2" value="26"/>
+            <enum name="piecePlace_dot_8_3" value="27"/>
+            <enum name="piecePlace_dot_8_4" value="28"/>
+            <enum name="piecePlace_dot_8_5" value="29"/>
+            <enum name="piecePlace_dot_8_6" value="30"/>
+            <enum name="piecePlace_dot_8_7" value="31"/>
+            <enum name="piecePlace_dot_9_1" value="32"/>
+            <enum name="piecePlace_dot_9_2" value="33"/>
+            <enum name="piecePlace_dot_9_3" value="34"/>
+
+            <enum name="piecePlace_ham_1" value="35"/>
+            <enum name="piecePlace_ham_2" value="36"/>
+            <enum name="piecePlace_ham_3" value="37"/>
+            <enum name="piecePlace_ham_4" value="38"/>
+            <enum name="piecePlace_ham_5" value="39"/>
+            <enum name="piecePlace_ham_6" value="40"/>
+
+            <enum name="piecePlace_share" value="41"/>
+            <enum name="piecePlace_custom" value="42"/>
+        </attr>
+        <attr name="bmb_sharedLineLength" format="dimension|reference"/>
+        <attr name="bmb_shareLine1Color" format="color|reference"/>
+        <attr name="bmb_shareLine2Color" format="color|reference"/>
+        <attr name="bmb_shareLineWidth" format="dimension|reference"/>
+
+        <!--Animation-->
+        <attr name="bmb_dimColor" format="color|reference"/>
+        <attr name="bmb_showDuration" format="integer|reference"/>
+        <attr name="bmb_showDelay" format="integer|reference"/>
+        <attr name="bmb_hideDuration" format="integer|reference"/>
+        <attr name="bmb_hideDelay" format="integer|reference"/>
+        <attr name="bmb_cancelable" format="boolean|reference"/>
+        <attr name="bmb_autoHide" format="boolean|reference"/>
+        <attr name="bmb_orderEnum" format="enum|reference">
+            <enum name="orderDefault" value="0"/>
+            <enum name="orderReverse" value="1"/>
+            <enum name="orderRandom" value="2"/>
+        </attr>
+        <attr name="bmb_frames" format="integer|reference"/>
+        <attr name="bmb_boomEnum" format="enum|reference">
+            <enum name="boomLine" value="0"/>
+            <enum name="boomParabola_1" value="1"/>
+            <enum name="boomParabola_2" value="2"/>
+            <enum name="boomParabola_3" value="3"/>
+            <enum name="boomParabola_4" value="4"/>
+            <enum name="boomHorizontalThrow_1" value="5"/>
+            <enum name="boomHorizontalThrow_2" value="6"/>
+            <enum name="boomRandom" value="7"/>
+        </attr>
+        <attr name="bmb_showMoveEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_showScaleEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_showRotateEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_hideMoveEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_hideScaleEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_hideRotateEaseEnum" format="enum|reference">
+            <enum name="inSine" value="0"/>
+            <enum name="outSine" value="1"/>
+            <enum name="inOutSine" value="2"/>
+            <enum name="inQuad" value="3"/>
+            <enum name="outQuad" value="4"/>
+            <enum name="inOutQuad" value="5"/>
+            <enum name="inCubic" value="6"/>
+            <enum name="outCubic" value="7"/>
+            <enum name="inOutCubic" value="8"/>
+            <enum name="inQuart" value="9"/>
+            <enum name="outQuart" value="10"/>
+            <enum name="inOutQuart" value="11"/>
+            <enum name="inQuint" value="12"/>
+            <enum name="outQuint" value="13"/>
+            <enum name="inOutQuint" value="14"/>
+            <enum name="inExpo" value="15"/>
+            <enum name="outExpo" value="16"/>
+            <enum name="inOutExpo" value="17"/>
+            <enum name="inCirc" value="18"/>
+            <enum name="outCirc" value="19"/>
+            <enum name="inOutCirc" value="20"/>
+            <enum name="inBack" value="21"/>
+            <enum name="outBack" value="22"/>
+            <enum name="inOutBack" value="23"/>
+            <enum name="inElastic" value="24"/>
+            <enum name="outElastic" value="25"/>
+            <enum name="inOutElastic" value="26"/>
+            <enum name="inBounce" value="27"/>
+            <enum name="outBounce" value="28"/>
+            <enum name="inOutBounce" value="29"/>
+            <enum name="linear" value="30"/>
+        </attr>
+        <attr name="bmb_rotateDegree" format="integer|reference"/>
+        <attr name="bmb_use3DTransformAnimation" format="boolean|reference"/>
+        <attr name="bmb_autoBoom" format="boolean|reference"/>
+        <attr name="bmb_autoBoomImmediately" format="boolean|reference"/>
+
+        <!--Boom Buttons-->
+        <attr name="bmb_buttonPlaceEnum" format="enum|reference">
+            <enum name="buttonPlace_sc_1" value="0"/>
+            <enum name="buttonPlace_sc_2_1" value="1"/>
+            <enum name="buttonPlace_sc_2_2" value="2"/>
+            <enum name="buttonPlace_sc_3_1" value="3"/>
+            <enum name="buttonPlace_sc_3_2" value="4"/>
+            <enum name="buttonPlace_sc_3_3" value="5"/>
+            <enum name="buttonPlace_sc_3_4" value="6"/>
+            <enum name="buttonPlace_sc_4_1" value="7"/>
+            <enum name="buttonPlace_sc_4_2" value="8"/>
+            <enum name="buttonPlace_sc_5_1" value="9"/>
+            <enum name="buttonPlace_sc_5_2" value="10"/>
+            <enum name="buttonPlace_sc_5_3" value="11"/>
+            <enum name="buttonPlace_sc_5_4" value="12"/>
+            <enum name="buttonPlace_sc_6_1" value="13"/>
+            <enum name="buttonPlace_sc_6_2" value="14"/>
+            <enum name="buttonPlace_sc_6_3" value="15"/>
+            <enum name="buttonPlace_sc_6_4" value="16"/>
+            <enum name="buttonPlace_sc_6_5" value="17"/>
+            <enum name="buttonPlace_sc_6_6" value="18"/>
+            <enum name="buttonPlace_sc_7_1" value="19"/>
+            <enum name="buttonPlace_sc_7_2" value="20"/>
+            <enum name="buttonPlace_sc_7_3" value="21"/>
+            <enum name="buttonPlace_sc_7_4" value="22"/>
+            <enum name="buttonPlace_sc_7_5" value="23"/>
+            <enum name="buttonPlace_sc_7_6" value="24"/>
+            <enum name="buttonPlace_sc_8_1" value="25"/>
+            <enum name="buttonPlace_sc_8_2" value="26"/>
+            <enum name="buttonPlace_sc_8_3" value="27"/>
+            <enum name="buttonPlace_sc_8_4" value="28"/>
+            <enum name="buttonPlace_sc_8_5" value="29"/>
+            <enum name="buttonPlace_sc_8_6" value="30"/>
+            <enum name="buttonPlace_sc_8_7" value="31"/>
+            <enum name="buttonPlace_sc_9_1" value="32"/>
+            <enum name="buttonPlace_sc_9_2" value="33"/>
+            <enum name="buttonPlace_sc_9_3" value="34"/>
+            <enum name="buttonPlace_ham_1" value="35"/>
+            <enum name="buttonPlace_ham_2" value="36"/>
+            <enum name="buttonPlace_ham_3" value="37"/>
+            <enum name="buttonPlace_ham_4" value="38"/>
+            <enum name="buttonPlace_ham_5" value="39"/>
+            <enum name="buttonPlace_ham_6" value="40"/>
+            <enum name="buttonPlace_horizontal" value="41"/>
+            <enum name="buttonPlace_vertical" value="42"/>
+            <enum name="buttonPlace_custom" value="43"/>
+        </attr>
+        <attr name="bmb_buttonPlaceAlignmentEnum" format="enum|reference">
+            <enum name="buttonPlaceAlignment_center" value="0"/>
+            <enum name="buttonPlaceAlignment_top" value="1"/>
+            <enum name="buttonPlaceAlignment_bottom" value="2"/>
+            <enum name="buttonPlaceAlignment_left" value="3"/>
+            <enum name="buttonPlaceAlignment_right" value="4"/>
+            <enum name="buttonPlaceAlignment_tl" value="5"/>
+            <enum name="buttonPlaceAlignment_tr" value="6"/>
+            <enum name="buttonPlaceAlignment_bl" value="7"/>
+            <enum name="buttonPlaceAlignment_br" value="8"/>
+        </attr>
+        <attr name="bmb_buttonHorizontalMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonVerticalMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonInclinedMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonTopMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonBottomMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonLeftMargin" format="dimension|reference"/>
+        <attr name="bmb_buttonRightMargin" format="dimension|reference"/>
+        <attr name="bmb_bottomHamButtonTopMargin" format="dimension|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="DuoDrawerLayout">
+        <attr name="menu" format="reference"/>
+        <attr name="content" format="reference"/>
+        <attr name="contentScaleClosed" format="float"/>
+        <attr name="clickToCloseScale" format="float"/>
+        <attr name="contentScaleOpen" format="float"/>
+        <attr name="menuScaleClosed" format="float"/>
+        <attr name="menuScaleOpen" format="float"/>
+        <attr name="menuAlphaClosed" format="float"/>
+        <attr name="menuAlphaOpen" format="float"/>
+        <attr name="marginFactor" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DuoMenuView">
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+        <attr name="background" format="reference"/>
+    </declare-styleable>
+
+    <attr name="elasticDrawerStyle" format="reference" />
+
+    <!-- Styleables used for styling the menu drawer. -->
+    <declare-styleable name="ElasticDrawer">
+
+        <!-- Drawable to use for the background of the menu. -->
+        <attr name="edMenuBackground" format="color" />
+
+        <!-- The size of the menu. -->
+        <attr name="edMenuSize" format="dimension" />
+
+        <!-- The touch bezel size. -->
+        <attr name="edTouchBezelSize" format="dimension" />
+
+        <!-- The maximum animation duration -->
+        <attr name="edMaxAnimationDuration" format="integer" />
+
+        <!-- The position of the drawer -->
+        <attr name="edPosition" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SnowEffect">
+        <attr name="elementSpeed" format="float"/>
+        <attr name="elementShowSpeedMillis" format="integer"/>
+        <attr name="elementShowIn"/>
+    </declare-styleable>
+
+    <attr name="elementShowIn">
+        <flag name="background" value="0"/>
+        <flag name="foreground" value="1"/>
+        <flag name="both" value="2"/>
+    </attr>
+
+    <declare-styleable name="ProSwipeButton">
+        <attr name="btn_text" format="string" />
+        <attr name="text_color" format="color" />
+        <attr name="bg_color" format="color" />
+        <attr name="arrow_color" format="color" />
+        <attr name="btn_radius" format="float" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

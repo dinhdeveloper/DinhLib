@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.library.tcd.extensions.countdown.CountDownView
+                android:id="@+id/view_count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <Button
+                android:id="@+id/startcountdown"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="startcountdown" />
+
+            <Button
+                android:id="@+id/button_error_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="error_toast" />
+
+            <Button
+                android:id="@+id/button_success_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="success_toast" />
+
+            <Button
+                android:id="@+id/noty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KSnack Bottom" />
+
+            <Button
+                android:id="@+id/open_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open dialog" />
+
+            <com.library.tcd.extensions.format_editext.FormattedEditText
+                android:id="@+id/formattedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="18"
+                app:fet_clearDrawable="@drawable/icon_clear"
+                app:fet_drawableGravity="fet_center"
+                app:fet_drawablePadding="4dp"
+                app:fet_formatStyle="+(84)-****-***-***"
+                app:fet_mark="*"
+                app:fet_mode="mode_complex" />
+
+            <Button
+                android:id="@+id/btnTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="top cookie"
+                />
+
+            <Button
+                android:id="@+id/set_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set date"
+                />
+
+            <com.library.tcd.extensions.proswipebutton.ProSwipeButton
+                android:id="@+id/proswipebutton_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:btn_text="Change Fragment" />
+
+            <com.library.tcd.extensions.proswipebutton.ProSwipeButton
+                android:id="@+id/proswipebutton_main_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:bg_color="@android:color/holo_blue_dark"
+                app:btn_text="Place Order" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
